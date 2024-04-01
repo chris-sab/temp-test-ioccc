@@ -384,7 +384,8 @@ body {
 
 * {
   box-sizing: border-box;
-  background: whitesmoke;
+  /* background: whitesmoke; */
+  background: white;
 }
 
 /* Remove hyphenation in line endings from most well known browsers */
@@ -397,7 +398,8 @@ p {
 
 body {
   margin: 0 auto;
-  padding: 10px;
+  /* padding: 10px; */
+  padding: 0;
   hyphens: manual;
   overflow-wrap: break-word;
   text-rendering: optimizeLegibility;
@@ -796,5 +798,68 @@ a:active {
   }
   .sidenav a, .sidenav a:focus, .sidenav a:hover, .sidenav a:visited, .sidenav a:active {
     color: blue;
+  }
+}
+
+/*
+ * Header
+ */
+
+.outfit-font {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.cheader {
+  width: 100%;
+  min-height: 72px;
+  box-shadow: 0 5px 10px 0 rgba(21,76,159,.0509803922);
+}
+
+.navbar {
+  width: 100%;
+  background-color: white;
+  height: 72px;
+}
+
+.container {
+  height: 72px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  color: #154c9f;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+  cursor: pointer;
+  text-decoration: none !important;
+
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.navbar-items {
+  display: flex;
+  gap: 48px;
+
+  .item {
+    color: #154c9f;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    cursor: pointer;
   }
 }
