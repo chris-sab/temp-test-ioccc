@@ -868,8 +868,6 @@ a:active {
 .navbar-items {
   display: flex;
   gap: 48px;
-
-
 }
 
 .navbar-items .item {
@@ -883,23 +881,26 @@ a:active {
   cursor: pointer;
 }
 
+.item-header {
+  display: block;
+}
+
 .navbar-items .sub-item {
   position: absolute;
   display: none;
-}
-
-.navbar-items .item:hover .sub-item{
-  display: flex !important;
   flex-direction: column;
   gap: 24px;
-  min-width: 320px;
-  padding: 16px 24px;
-  font-size: 16px;
+  min-width: 200px;
+  padding: 24px;
+  font-size: 14px;
   font-weight: 500;
   color: #154c9f;
   text-align: left;
   background-color: white;
-  box-shadow: 0 5px 10px 0 rgba(21,76,159,.0509803922);
-  top: 36px;
   left: -100%;
+}
+
+.navbar-items .item:hover .sub-item{
+  display: flex !important;
+
 }
