@@ -21,7 +21,7 @@ html {
  */
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 /*
@@ -564,12 +564,16 @@ a:active {
 
 /* Style the left column */
 .leftcolumn {
-  float: left;
-  width: 20%;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
+  /*
+    float: left;
+    width: 20%;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  */
+
+  display: none; /* by Chris */
 }
 
 /* Left column horizontal line */
@@ -580,9 +584,13 @@ a:active {
 
 /* Style the right column */
 .rightcolumn {
-  float: left;
-  width: 80%;
-  padding-left: 10px;
+  /*
+    float: left;
+    width: 80%;
+    padding-left: 10px;
+  */
+
+  width: 100%; /* by Chris */
 }
 .rightcolumn p, code, pre, h1, h2, h3, h4, h5, h6 {
   color: black;
@@ -802,14 +810,22 @@ a:active {
 }
 
 /*
+ * content
+ */
+
+ .content {
+  max-width: 1140px;
+  margin: 24px auto;
+ }
+
+
+/*
  * Header
  */
 
 .outfit-font {
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
 }
 
 .cheader {
