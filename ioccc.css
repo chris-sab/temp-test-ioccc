@@ -620,7 +620,7 @@ a:active {
   clear: both;
   padding-left: 10px;
   padding-right: 10px;
-  border-style:  solid hidden hidden hidden;
+  /* border-style:  solid hidden hidden hidden;  blocked by chris */
   text-decoration: none;
 }
 .footer p, code, pre {
@@ -902,5 +902,50 @@ a:active {
 
 .navbar-items .item:hover .sub-item{
   display: flex !important;
+}
 
+/*
+ * Customer Footer
+ */
+
+.cfooter {
+  max-width: 1140px;
+  margin: 24px auto;
+}
+
+.cfooter-container {
+  width: 100%;
+  padding-top: 80px;
+}
+
+
+.upper-section {
+  margin-bottom: 40px !important;
+  display: flex;
+  width: 100%;
+
+  .item {
+    width: 100%;
+  }
+}
+
+.item-title {
+  font-weight: 700;
+  color: #154c9f;
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+
+.item-title::after {
+  display: block;
+  margin-top: 16px;
+  content: "";
+  width: 40px;
+  border-bottom: 1px solid #154c9f;
+}
+
+.item-section-title {
+  margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 23px;
 }
