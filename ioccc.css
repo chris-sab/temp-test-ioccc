@@ -949,3 +949,22 @@ a:active {
   font-size: 18px;
   line-height: 23px;
 }
+
+.lower-section {
+  display: block;
+}
+
+.lower-section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.lower-copyright {
+  margin-bottom: 0;
+  padding-right: 24px;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  color: #154c9f;
+}
