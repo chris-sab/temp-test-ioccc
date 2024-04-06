@@ -968,3 +968,17 @@ a:active {
   font-weight: 500;
   color: #154c9f;
 }
+
+.item-logo {
+  font-size: 48px;
+  font-weight: 700;
+  color: #154c9f;
+  margin-bottom: 40px;
+}
+
+.item-logo-detail {
+  margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 23px;
+  color: #154c9f;
+}
